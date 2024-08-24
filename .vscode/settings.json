@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "__config": "cpp",
+        "unordered_map": "cpp",
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "new": "cpp"
+    }
+}

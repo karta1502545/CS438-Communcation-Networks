@@ -1,0 +1,23 @@
+sender (karta1502545): 192.168.65.3
+receiver (bobby): 192.168.65.4
+
+1. look up IP
+hostname -I
+
+2. copy file
+
+(sender)
+scp -r ~/Desktop/CS438/sp24_cs438_chunyil3 karta1502545@192.168.65.3:/home/karta1502545/Desktop
+
+(receiver)
+scp -r ~/Desktop/CS438/sp24_cs438_chunyil3 bobby@192.168.65.4:/home/bobby/Desktop
+
+3. compile file (in VM)
+make
+
+
+(bobby)
+./reliable_receiver 9001 output
+
+(karta1502545)
+./reliable_sender 192.168.65.4 9001 partners.txt 10
